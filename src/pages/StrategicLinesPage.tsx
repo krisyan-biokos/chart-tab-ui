@@ -6,7 +6,7 @@ import { strategicLinesData } from "../data/mockData";
 export const StrategicLinesPage: React.FC = () => {
   return (
     <div className="page-content">
-      <div className="stats-grid">
+      <div className="states-grid">
         <StateCard value={7} label="Linhas estratégicas" />
         <StateCard value={40} label="Estratégias" />
         <StateCard value={178} label="Ações estratégicas" />

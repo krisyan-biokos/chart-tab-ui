@@ -6,7 +6,7 @@ import { deliveryTimelineData } from "../data/mockData";
 export const DeliveryTimelinePage: React.FC = () => {
   return (
     <div className="page-content">
-      <div className="stats-grid">
+      <div className="states-grid">
         <StateCard value={22} label="Dotação inicial" />
         <StateCard value={51} label="Total dotação atualizada" />
         <StateCard value={110} label="Ajuste dotação" />

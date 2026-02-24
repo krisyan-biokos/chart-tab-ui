@@ -1,0 +1,73 @@
+.chart-container {
+  background: #fff;
+  border-radius: 14px;
+  padding: 28px 24px 24px 24px;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.04);
+  margin-bottom: 28px;
+  border: none;
+}
+
+.chart-title {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0 0 18px 0;
+  padding-left: 6px;
+}
+
+/* Bar Chart Styles */
+.bar-chart {
+  width: 100%;
+  padding: 0 8px 0 0;
+}
+.bar-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.bar-label {
+  flex: 1 1 220px;
+  font-size: 0.98rem;
+  color: #222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 12px;
+}
+.bar {
+  height: 18px;
+  border-radius: 8px;
+  min-width: 0;
+  position: relative;
+  transition: width 0.5s;
+}
+.bar-value {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #222;
+  margin-left: 10px;
+  min-width: 32px;
+  text-align: left;
+}
+.bar-pink { background: #ff6ec7; }
+.bar-blue { background: #6b80f5; }
+.bar-red { background: #ff6e7a; }
+.bar-orange { background: #ff9c4a; }
+.bar-purple { background: #a78bfa; }
+
+/* Grid lines */
+.bar-chart-grid {
+  position: absolute;
+  left: 220px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.bar-chart-grid-line {
+  position: absolute;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: #ececf6;
+}

@@ -1,0 +1,17 @@
+/* OriginPage layout for chart + stats alignment */
+.origin-layout {
+  display: flex;
+  flex-direction: row !important;
+  gap: 25px;
+  justify-content: flex-end;
+}
+.origin-chart-area {
+  width: 100%;
+}
+.origin-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 220px;
+  max-width: 260px;
+}

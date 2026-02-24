@@ -6,7 +6,10 @@ import { municipalitiesData } from "../data/mockData";
 export const MunicipalitiesPage: React.FC = () => {
   return (
     <div className="page-content">
-      <div className="stats-grid">
+      <div className="states-grid">
+        <StateCard value={7} label="Projetos sem município" />
+        <StateCard value={7} label="Projetos sem município" />
+        <StateCard value={7} label="Projetos sem município" />
         <StateCard value={7} label="Projetos sem município" />
       </div>
       <VerticalBarChart data={municipalitiesData} title="Projetos por origem" />
