@@ -1,35 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './styles/App.css'
+import { useState } from "react";
+import { Header } from "./components/Header";
+import { StrategicLinesPage } from "./pages/StrategicLinesPage";
+import { OriginPage } from "./pages/OriginPage";
+import { MunicipalitiesPage } from "./pages/MunicipalitiesPage";
+import { DeliveryTimelinePage } from "./pages/DeliveryTimelinePage";
+import { OrganizationPage } from "./pages/OrganizationPage";
+import { StagePage } from "./pages/StagePage";
+import { ProjectsListPage } from "./pages/ProjectsListPage";
+import { allTabsData } from "./data/mockData";
+import "./styles/App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [activeTab, setActiveTab] = useState("Linhas estratégicas");
+
+  const renderPage = () => {
+    switch (activeTab) {
+      case allTabsData[0]:
+        return <StrategicLinesPage />;
+      case allTabsData[1]:
+        return <OriginPage />;
+      case allTabsData[2]:
+        return <MunicipalitiesPage />;
+      case allTabsData[3]:
+        return <DeliveryTimelinePage />;
+      case allTabsData[4]:
+        return <OrganizationPage />;
+      case allTabsData[5]:
+        return <StagePage />;
+      case allTabsData[6]:
+        return <ProjectsListPage />;
+      default:
+        return <StrategicLinesPage />;
+    }
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="app">
+      <Header
+        activeTab={activeTab}
+        tabs={allTabsData}
+        onTabChange={setActiveTab}
+      />
+      <div className="main-content">{renderPage()} </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
