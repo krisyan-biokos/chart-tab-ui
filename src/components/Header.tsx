@@ -21,12 +21,14 @@ export const Header: React.FC<HeaderProps> = ({
             <p>Plano Amapá 2043</p>
           </div>
           <div className="header-filters">
-            <p className="header-info">
-              Despenses • <span className="highlight">Filtro aplicados</span>
-            </p>
-            <p className="applied-filters">
-              3 filtros aplicados. Ano 2025 Emenda Sem emendo
-            </p>
+            <div className="header-info-container">
+              <div className="header-info-container-border">
+                <p className="header-info">Despenses • Filtro aplicados</p>
+                <p className="applied-filters highlight">
+                  3 filtros aplicados. Ano 2025 Emenda Sem emendo
+                </p>
+              </div>
+            </div>
             <div className="header-buttons">
               <button className="btn btn-filters">Filtros</button>
               <button className="btn btn-clear">Limpar filtros</button>
