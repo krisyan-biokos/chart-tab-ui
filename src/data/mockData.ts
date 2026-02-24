@@ -23,7 +23,7 @@ export const strategicLinesData = [
   {
     name: "Desenvolvimento Econômico com Sustentabilidade",
     value: 240,
-    color: "#6366F1",
+    color: "#6b80f5",
   },
   { name: "Saúde e Bem-estar", value: 180, color: "#FF6B6B" },
   { name: "Infraestrutura e Mobilidade", value: 320, color: "#FF9F1C" },

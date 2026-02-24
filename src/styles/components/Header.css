@@ -46,11 +46,11 @@
 }
 .applied-filters {
   font-size: 0.92rem;
-  color: #6366f1;
+  color: #6b80f5;
   margin: 0 0 10px 0;
 }
 .applied-filters.highlight {
-  color: #6366f1;
+  color: #6b80f5;
   font-weight: 600;
 }
 .header-buttons {
@@ -65,7 +65,7 @@
   border-radius: 7px;
   border: 1px solid #ececf6;
   background: #fff;
-  color: #6366f1;
+  color: #6b80f5;
   font-size: 0.98rem;
   font-weight: 500;
   cursor: pointer;
@@ -74,19 +74,19 @@
   width: 100%;
 }
 .btn:hover {
-  border-color: #6366f1;
+  border-color: #6b80f5;
   background: #f5f7ff;
 }
 .btn-filters {
-  border-color: #6366f1;
-  color: #6366f1;
+  border-color: #6b80f5;
+  color: #6b80f5;
 }
 .btn-filters:hover {
   background: #f5f7ff;
 }
 .btn-clear {
-  border-color: #6366f1;
-  color: #6366f1;
+  border-color: #6b80f5;
+  color: #6b80f5;
   text-decoration: underline;
 }
 .btn-clear:hover {
@@ -115,10 +115,10 @@
   letter-spacing: 0.01em;
 }
 .tab:hover {
-  color: #6366f1;
+  color: #6b80f5;
 }
 .tab.active {
-  color: #6366f1;
-  border-bottom-color: #6366f1;
+  color: #6b80f5;
+  border-bottom-color: #6b80f5;
   background: #f5f7ff;
 }

@@ -32,7 +32,7 @@ export const HorizontalBarChart: React.FC<HorizontalBarChartProps> = ({
           <XAxis type="number" />
           <YAxis dataKey="name" type="category" width={250} />
           <Tooltip />
-          <Bar dataKey="value" fill="#6366F1" radius={[0, 8, 8, 0]} />
+          <Bar dataKey="value" fill="#6b80f5" radius={[0, 8, 8, 0]} />
         </BarChart>
       </ResponsiveContainer>
     </div>
@@ -60,7 +60,7 @@ export const VerticalBarChart: React.FC<VerticalBarChartProps> = ({
           <XAxis dataKey="name" angle={-45} textAnchor="end" height={100} />
           <YAxis />
           <Tooltip />
-          <Bar dataKey="value" fill="#6366F1" radius={[8, 8, 0, 0]} />
+          <Bar dataKey="value" fill="#6b80f5" radius={[8, 8, 0, 0]} />
         </BarChart>
       </ResponsiveContainer>
     </div>
@@ -92,7 +92,7 @@ export const MultiColorBarChart: React.FC<MultiColorBarChartProps> = ({
           {data.length > 0 && (
             <Bar
               dataKey="value"
-              fill="#6366F1"
+              fill="#6b80f5"
               radius={[0, 8, 8, 0]}
               shape={<CustomBar data={data} />}
             />
@@ -105,7 +105,7 @@ export const MultiColorBarChart: React.FC<MultiColorBarChartProps> = ({
 
 const CustomBar = (props: any) => {
   const { x, y, width, height, payload } = props;
-  const color = payload?.color || "#6366F1";
+  const color = payload?.color || "#6b80f5";
   return (
     <rect
       x={x}

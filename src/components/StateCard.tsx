@@ -8,9 +8,9 @@ interface StateCardProps {
 
 export const StateCard: React.FC<StateCardProps> = ({ value, label }) => {
   return (
-    <div className="stat-card">
-      <div className="stat-value">{value}</div>
-      <div className="stat-label">{label}</div>
+    <div className="state-card">
+      <div className="state-value">{value}</div>
+      <div className="state-label">{label}</div>
     </div>
   );
 };
